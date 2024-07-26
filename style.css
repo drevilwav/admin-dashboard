@@ -9,22 +9,74 @@ body {
 
 
 .container {
+  height: 100%;
   display: grid;
   grid-template-rows: 200px 1fr;
-  grid-template-columns: 350px 1fr; 
+  grid-template-columns: 230px 1fr; 
 }
 
 .sidebar {
   grid-row: 1 / 3;
   background-color: rgb(25, 146, 212);
   display: grid;
-  grid-template-rows: 100px repeat(6, 70px) 100px repeat(3, 70px);
-  grid-column: 70px 1fr;
+  grid-template-rows: 70px repeat(6, 40px) 40px repeat(3, 40px);
+  grid-template-columns: 70px 1fr;
+  grid-auto-flow: column;
+}
+
+.sidebar svg {
+  fill: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+.sidebar p {
+  color: white;
+  font-weight: 500;
+  align-self: center;
+  justify-self: start;
+}
+
+#dashboard-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .header {
   background-color: white;
+  display: grid;
+  grid-template-rows: 60px 100px;
+  grid-template-columns: minmax(600px, 1fr) 500px;
 }
+
+.searchbar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.searchbar svg {
+  fill: black;
+  width: 25px;
+  height: 25px;
+}
+
+.searchbar input {
+  flex-grow: 1;
+  border-radius: 10px;
+  height: 30px;
+  border-style: none;
+  background-color: rgb(226, 232, 240);
+  font-family: Roboto;
+  color: rgb(49, 49, 49);;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
 
 .main {
   background-color: rgb(243, 255, 11);
