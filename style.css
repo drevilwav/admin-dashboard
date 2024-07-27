@@ -154,29 +154,56 @@ p {
 .projects-main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30px auto;
+  grid-template-rows: 20px auto;
   gap: 20px;
 }
 
 .projects-main > p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-rows: repeat(auto-fill, 200px);
+  gap: 30px;
+}
 
+.card {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px 110px 40px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 5px 5px 3px rgba(136, 136, 136, 0.275);
+  z-index: 1;
+  border-left: orange;
+  border-left-style: solid;
+  border-left-width: 7px;
+}
 
+.card-header {
+  font-weight: 700;
+  font-size: 16px;
+  align-self: center;
+  padding-left: 30px;
+}
 
+.card-text {
+  font-size: 12px;
+  align-self: start;
+  padding-left: 30px;
+  padding-right: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.card-icons {
+  display: flex;
+  gap: 15px;
+  padding-right: 20px;
+  justify-self: end;
+  align-self: start;
+}
 
 .card-icons svg {
   height: 20px;
