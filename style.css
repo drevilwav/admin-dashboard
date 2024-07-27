@@ -4,15 +4,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(53, 125, 2, 0.39);
 }
 
+p {
+  margin: 0;
+}
 
 .container {
   height: 100%;
   display: grid;
-  grid-template-rows: 200px 1fr;
-  grid-template-columns: 230px 1fr; 
+  grid-template-rows: 170px 1fr;
+  grid-template-columns: 230px 1fr;   
 }
 
 .sidebar {
@@ -48,7 +50,9 @@ body {
   background-color: white;
   display: grid;
   grid-template-rows: 60px 100px;
-  grid-template-columns: minmax(600px, 1fr) 500px;
+  grid-template-columns: minmax(300px, 1fr) 1fr;
+  box-shadow: 5px 5px 3px rgba(136, 136, 136, 0.275);
+  z-index: 1;
 }
 
 .searchbar {
@@ -77,8 +81,103 @@ body {
   padding-left: 10px;
 }
 
-
-.main {
-  background-color: rgb(243, 255, 11);
+.user-info {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+  padding-right: 50px;
 }
 
+.user-info svg {
+  height: 25px;
+  flex: 0 0 auto;
+}
+
+.user-info img {
+  width: 30px;
+}
+
+.user-info p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.greet {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 35px;
+  gap: 20px;
+}
+
+.greet img {
+  width: 60px;
+}
+
+.greet p {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.greet span {
+  font-size: 20px;
+}
+
+.nav-button {
+  display: flex;
+  gap: 40px;
+  justify-content: end;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.nav-button button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(25, 146, 212);
+  border-radius: 15px;
+  border-style: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.main {
+  background-color: rgb(226, 232, 240);
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 1fr;
+  padding: 20px;
+}
+
+.projects-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px auto;
+  gap: 20px;
+}
+
+.projects-main > p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-icons svg {
+  height: 20px;
+}
