@@ -136,7 +136,7 @@ p {
   width: 100px;
   height: 40px;
   background-color: rgb(25, 146, 212);
-  border-radius: 15px;
+  border-radius: 25px;
   border-style: none;
   color: white;
   font-weight: 500;
@@ -207,4 +207,93 @@ p {
 
 .card-icons svg {
   height: 20px;
+}
+
+.announce {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 300px;
+  gap: 20px;
+  padding-left: 30px;
+}
+
+.announce > p {
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.announce-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1px 1fr 1px 1fr;    
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 5px 5px 3px rgba(136, 136, 136, 0.275);
+  z-index: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+}
+
+.announce-header {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.announce-text {
+  font-size: 12px;
+}
+
+.announce-line {
+  background-color: rgb(166, 166, 166);
+  height: 1px;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 290px;
+  gap: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.trending > p {
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.trending-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;    
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 5px 5px 3px rgba(136, 136, 136, 0.275);
+  z-index: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.trending-card img {
+  width: 30px;
+}
+
+.user p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.user span {
+  color: rgb(125, 125, 125);
 }
